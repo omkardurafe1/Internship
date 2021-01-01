@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>supplierlist</class>
+ <widget class="QWidget" name="supplierlist">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>778</width>
+    <height>587</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Suppliers List</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>10</y>
+     <width>411</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="title">
+    <string>Supplier Dashboard:</string>
+   </property>
+   <widget class="QLabel" name="ownernamelbl">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>51</y>
+      <width>66</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Owner Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pattalbl">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>181</y>
+      <width>30</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Patta:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sansthalbl">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>129</y>
+      <width>88</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sanstheche Naav:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cntnamelbl">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>103</y>
+      <width>63</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cenre Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="khatalbl">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>77</y>
+      <width>83</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Khatyache Naav:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="addresslbl">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>155</y>
+      <width>43</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Address:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ownernametxt">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>51</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="khatatxt">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>77</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="cntnametxt">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>103</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sansthatxt">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>129</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="addresstxt">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>155</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pattatxt">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>181</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refreshbtn">
+    <property name="geometry">
+     <rect>
+      <x>344</x>
+      <y>20</y>
+      <width>61</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Refresh</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>301</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="cntcodelbl">
+       <property name="text">
+        <string>Centre Code:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="cntcodetxt"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="usercodelbl">
+       <property name="text">
+        <string>User Code:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="usercodetxt"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>401</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="villagelbl">
+       <property name="text">
+        <string>Village/City:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="villagecmb">
+       <item>
+        <property name="text">
+         <string>Village Name</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="statelbl">
+       <property name="text">
+        <string>State</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="statecmb">
+       <item>
+        <property name="text">
+         <string>State Name</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="paymentcmb">
+       <item>
+        <property name="text">
+         <string>Payment option</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>230</y>
+      <width>351</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QLabel" name="contactlbl">
+       <property name="text">
+        <string>Contact Person:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="contacttxt"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QListView" name="listview">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>301</width>
+     <height>511</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>290</y>
+     <width>401</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Bank Details:</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>20</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="branchnamelbl">
+       <property name="text">
+        <string>Branch:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="branchnametxt"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>198</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="banknamelbl">
+       <property name="text">
+        <string>Bank Name:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="banknametxt"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QLabel" name="acnamelbl">
+       <property name="text">
+        <string>Account Name:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="acnametxt"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>50</y>
+      <width>128</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QLabel" name="grouplbl">
+       <property name="text">
+        <string>Group:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="groupcmb">
+       <item>
+        <property name="text">
+         <string>Group Name</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>390</y>
+     <width>391</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Opening Balance:</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>346</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <item>
+      <widget class="QLabel" name="opendebitlbl">
+       <property name="text">
+        <string>Debit:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="opendebittxt"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="opencreditlbl">
+       <property name="text">
+        <string>Credit:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="opencredittxt"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>550</y>
+     <width>411</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_12">
+    <item>
+     <widget class="QPushButton" name="addbtn">
+      <property name="text">
+       <string>ADD</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="savebtn">
+      <property name="text">
+       <string>SAVE</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="deletebtn">
+      <property name="text">
+       <string>DELETE</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="exitbtn">
+      <property name="text">
+       <string>EXIT</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>450</y>
+     <width>91</width>
+     <height>74</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="debittxt"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="credittxt"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="difftxt"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>450</y>
+     <width>81</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="debitlbl">
+      <property name="text">
+       <string>Debit:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="creditlb">
+      <property name="text">
+       <string>Credit:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="difflbl">
+      <property name="text">
+       <string>Difference:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>604</x>
+     <y>449</y>
+     <width>81</width>
+     <height>74</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QLineEdit" name="mvattxt"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="cvattxt"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="gstnumtxt"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>558</x>
+     <y>449</y>
+     <width>42</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QLabel" name="mvatlbl">
+      <property name="text">
+       <string>M.VAT:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="cvatlbl">
+      <property name="text">
+       <string>C.VAT:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="gstnumlbl">
+      <property name="text">
+       <string>GST No.</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

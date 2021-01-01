@@ -1,0 +1,1466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Company_form</class>
+ <widget class="QWidget" name="Company_form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>897</width>
+    <height>789</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>861</width>
+     <height>751</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(221, 255, 246);
+background-color: rgb(80, 80, 80);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.25 rgba(173, 83,137 , 255), stop:0.789773 rgba(60, 16, 83, 255));</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>60</y>
+      <width>691</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 151, 33);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.25 rgba(206, 255, 180, 246), stop:0.789773 rgba(0, 255, 234, 255));
+border: 1px solid black;</string>
+    </property>
+    <property name="title">
+     <string>Rate Chart Setting</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Rate Chart Name :</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Ratechart_combo">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>20</y>
+       <width>311</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Rate Chart</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="AddRtNm_btn">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>20</y>
+       <width>75</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(171, 196, 255);
+</string>
+     </property>
+     <property name="text">
+      <string>AddRtNm</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>281</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Below Grade Milk Rate</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QLabel" name="Cow_lbl">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Cow</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Below_lbl">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>41</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Below</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Vas_lbl">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>20</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vas</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Curd_lbl">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>20</y>
+        <width>41</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Curd</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Std_lbl">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>20</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Std</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="AddEvn_lbl">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>20</y>
+        <width>41</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>AddEvn</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CBelow_txt">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>40</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>0.00</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CVas_txt">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>40</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>0.00</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CCurd_txt">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>40</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>0.00</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CStd_txt">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>40</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>0.00</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="CAddEvn_txt">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>40</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>0.00</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Buff_lbl">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Buff</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BCurd_txt">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>70</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>0.00</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Bstd_txt">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>0.00</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BBelow_txt">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>70</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>0.00</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BVas_txt">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>70</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>0.00</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BAddEvn_txt">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>70</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="placeholderText">
+       <string>0.00</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>140</y>
+       <width>231</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>RtChrt_From-To Range</string>
+     </property>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>101</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="F_Fat_lbl">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>34</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>F-Fat</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="T_fat_lbl">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>0</y>
+         <width>35</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>T-Fat</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="BTFat_txt">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>50</y>
+         <width>31</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="placeholderText">
+        <string>0.00</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="CFFat_txt">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>31</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="placeholderText">
+        <string>0.00</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="BFFat_txt">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>31</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="placeholderText">
+        <string>0.00</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="CTFat_txt">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>20</y>
+         <width>31</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="placeholderText">
+        <string>0.00</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>20</y>
+        <width>101</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="F_lct_lbl">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>41</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>F-Lct</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="T_lct_lbl">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>0</y>
+         <width>34</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>T-Lct</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="BTlct_txt">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>50</y>
+         <width>31</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="placeholderText">
+        <string>0.00</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="CFlct_txt">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>31</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="placeholderText">
+        <string>0.00</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="BFlct_txt">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>31</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="placeholderText">
+        <string>0.00</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="TLct_txt">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>20</y>
+         <width>31</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="placeholderText">
+        <string>0.00</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="RTChrtFileNm_lbl">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>82</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>RtChrt FileNm:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_19">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>250</y>
+       <width>321</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Sel_xls_File_btn">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>250</y>
+       <width>75</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(171, 196, 255);</string>
+     </property>
+     <property name="text">
+      <string>Sel XLs File</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Route_lbl1">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>280</y>
+       <width>42</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Route</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Route1_combo">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>280</y>
+       <width>321</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="NewSetting_btn">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>280</y>
+       <width>75</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(171, 196, 255);</string>
+     </property>
+     <property name="text">
+      <string>New Setting</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Route2_combo">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>310</y>
+       <width>321</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Route_lbl2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>310</y>
+       <width>42</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Route</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Update_btn">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>310</y>
+       <width>75</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(171, 196, 255);</string>
+     </property>
+     <property name="text">
+      <string>Update</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>521</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QComboBox" name="Milk_combo">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>51</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Cow</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bufellow</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QDateEdit" name="dateEdit">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>50</y>
+        <width>110</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Method_lbl">
+      <property name="geometry">
+       <rect>
+        <x>384</x>
+        <y>10</y>
+        <width>51</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Method:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="Method_combo">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>10</y>
+        <width>75</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>RateChart</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="FIle_combo">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>50</y>
+        <width>75</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Xls</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="Milk_lbl">
+      <property name="geometry">
+       <rect>
+        <x>4</x>
+        <y>10</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Milk:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Apply_lbl">
+      <property name="geometry">
+       <rect>
+        <x>244</x>
+        <y>50</y>
+        <width>41</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Apply:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="Base_combo">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>10</y>
+        <width>81</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Fat/Lact</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="Base_lbl">
+      <property name="geometry">
+       <rect>
+        <x>244</x>
+        <y>10</y>
+        <width>41</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Base:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Date_lbl">
+      <property name="geometry">
+       <rect>
+        <x>4</x>
+        <y>50</y>
+        <width>105</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Apply From Date:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="File_lbl">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>50</y>
+        <width>31</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>File:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Shift_lbl">
+      <property name="geometry">
+       <rect>
+        <x>104</x>
+        <y>10</y>
+        <width>34</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Shift:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="Shift_combo">
+      <property name="geometry">
+       <rect>
+        <x>144</x>
+        <y>10</y>
+        <width>81</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Moning</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Noon</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Night</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="Apply_combo">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>50</y>
+        <width>81</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>All</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>10</y>
+      <width>301</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(129, 0, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Company Name</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="Table">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>420</y>
+      <width>251</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid black;
+background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>118</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>108</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>109</string>
+     </attribute>
+     <widget class="QScrollBar" name="horizontalScrollBar">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>150</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(191, 191, 191);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTableWidget" name="Fat_and_fatrate_table">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>420</y>
+      <width>191</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgb(191, 191, 191);
+border: 1px solid black;</string>
+    </property>
+    <property name="rowCount">
+     <number>1</number>
+    </property>
+    <property name="columnCount">
+     <number>2</number>
+    </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>true</bool>
+    </attribute>
+    <row/>
+    <column>
+     <property name="text">
+      <string>Upto Fat</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Fat Rate</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="Fat_Lacto_SNF_rate_table">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>420</y>
+      <width>231</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(191, 191, 191);
+border: 1px solid black;</string>
+    </property>
+    <property name="rowCount">
+     <number>1</number>
+    </property>
+    <property name="columnCount">
+     <number>4</number>
+    </property>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>41</number>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>55</number>
+    </attribute>
+    <row/>
+    <column>
+     <property name="text">
+      <string> Fat</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Lacto</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SNF</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Rate</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="New_btn">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>680</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(191, 191, 191);
+background-color: rgb(171, 196, 255);
+border: 1px solid black;</string>
+    </property>
+    <property name="text">
+     <string>New</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Cancel_btn">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>680</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(171, 196, 255);
+border: 1px solid black;</string>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Export_btn">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>680</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(171, 196, 255);
+border: 1px solid black;</string>
+    </property>
+    <property name="text">
+     <string>Export RtChrt</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Import_RtChrt_btn">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>680</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(171, 196, 255);
+border: 1px solid black;</string>
+    </property>
+    <property name="text">
+     <string>Import RtChrt</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Excel_btn">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>680</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid black;
+background-color: rgb(171, 196, 255);</string>
+    </property>
+    <property name="text">
+     <string>Excel </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Text_btn">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>680</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(171, 196, 255);
+border: 1px solid black;</string>
+    </property>
+    <property name="text">
+     <string>Text</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Exit_btn">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>680</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(171, 196, 255);
+border: 1px solid black;</string>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

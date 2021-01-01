@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMaster">
+    <property name="title">
+     <string>Master</string>
+    </property>
+    <addaction name="actionBank_Master"/>
+    <addaction name="actionItem_Master"/>
+    <addaction name="actionCustomer_Master"/>
+    <addaction name="actionItem_Batch_Info"/>
+   </widget>
+   <widget class="QMenu" name="menuTransaction">
+    <property name="title">
+     <string>Transaction</string>
+    </property>
+    <addaction name="actionCreate_Transaction"/>
+    <addaction name="actionCommulative_sale"/>
+    <addaction name="actionPayment_Transaction"/>
+    <addaction name="actionPlant_to_Godown"/>
+   </widget>
+   <widget class="QMenu" name="menuDispatch">
+    <property name="title">
+     <string>Dispatch</string>
+    </property>
+    <addaction name="actionEnquiry"/>
+    <addaction name="actionItem_Return"/>
+   </widget>
+   <addaction name="menuMaster"/>
+   <addaction name="menuTransaction"/>
+   <addaction name="menuDispatch"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCreate_Transaction">
+   <property name="text">
+    <string>Create Transaction</string>
+   </property>
+  </action>
+  <action name="actionCommulative_sale">
+   <property name="text">
+    <string>Cumulative Sale</string>
+   </property>
+  </action>
+  <action name="actionPayment_Transaction">
+   <property name="text">
+    <string>Payment Transaction</string>
+   </property>
+  </action>
+  <action name="actionPlant_to_Godown">
+   <property name="text">
+    <string>Plant to Goadown</string>
+   </property>
+  </action>
+  <action name="actionBank_Master">
+   <property name="text">
+    <string>Bank Master</string>
+   </property>
+  </action>
+  <action name="actionItem_Master">
+   <property name="text">
+    <string>Item Master</string>
+   </property>
+  </action>
+  <action name="actionCustomer_Master">
+   <property name="text">
+    <string>Customer Master</string>
+   </property>
+  </action>
+  <action name="actionItem_Batch_Info">
+   <property name="text">
+    <string>Item Batch Info</string>
+   </property>
+  </action>
+  <action name="actionEnquiry">
+   <property name="text">
+    <string>Enquiry</string>
+   </property>
+  </action>
+  <action name="actionItem_Return">
+   <property name="text">
+    <string>Item Return</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
